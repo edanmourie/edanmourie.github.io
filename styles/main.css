@@ -27,6 +27,9 @@ body, html { /* google said I had to put this in after adding <!DOCTYPE html>, b
 body { /* Styling for the text in the main (index.html) body */
   text-align: center;
   color: black;
+}
+
+p {
   margin-left: 10px;
   margin-right: 10px;
 }
