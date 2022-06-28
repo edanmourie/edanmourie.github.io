@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+  <head>
+
+    <title>HTML-CSS Blog, Sprint 2 Tech</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oxygen:wght@300&display=swap" rel="stylesheet">
+
+  </head>
+
+<html>
+<!-- can make one if want
+  <header>
+
+  </header>
+-->
+  <body>
+
+    <main>
+
+      <div class=hero-image> <!--div holding hero image-->
+        <div class="sprint2tech-hero-text"> <!--text to overlay hero image-->
+          <h1>Edan Mourie</h1>
+          <h2>Sprint 2 Tech - HTML-CSS Blog</h2>
+          <button><a href="#go-to-blog">Go to blogs</a></button>
+        </div>
+      </div>
+
+      <div>
+        <h3>Kia ora and welcome to my <span style=color:orange;><i>Sprint 2 Tech Blog!</i></span></h3> 
+        <h4><u>The difference between Margin, Border and Padding.</u></h4>
+        <p class="margin-border-padding">Example.</p> <!--Making a class means we can target this one paragraph specifically-->
+        <p>In the example above, margin, border, and padding can be clearly seen. 
+          <br>
+          <b>Margin</b> is the space between the thing you are editing, 
+          and the things on the page next to them. From the outside of our example box, there is 50px between it and <br>
+          "The Difference between Margin, Border, and Padding.", and this paragraph.
+          Left and right margins vary in size depending on screen size, as their width is set to Auto.
+          <br>
+          <b>Border</b> is the outside edge of the item you are editing, as can be seen by the dashed orange line.
+          <br>
+          <b>Padding</b> is the space between the actual content of the item, in this case the text "Example", and the edge
+          of the box, which is shown in the aqua color.
+          <br><br>
+          Below is an image showing the dimensions of our box, again, left and right margins vary depending on screen size.
+          <br><br>
+          <img src="../images/margin-border-padding-DOM-example.png" alt="Image showing dimensions of the box, top and bottom margin is 50px, border is 10px, padding is 30px. Left and right margins change depending on size of screen.">
+          <br><br>
+          Below is the HTML (top image) and CSS code (bottom image) used to create the example box.
+          <br><br>
+          <img src="../images/margin-border-padding-HTML-example.png" alt="The HTML code used to create our example box">
+          <br>
+          <img src="../images/margin-border-padding-CSS-example.png" alt="The CSS code used to create our example box">
+          <br>
+          If the only code we entered was the background colour, it would look like the example below.
+          <br>
+          <img src="../images/no-margin-border-padding-HTML-example.png">
+          <br>
+          <img src="../images/no-margin-border-padding-CSS-example.png">          
+        </p>
+        <p class="no-margin-border-padding">Example</p>
+        <p>The reason there is a gap (or margin) between the example and the paragraphs either side of it, is because a paragraph tag
+          < p > has automatic margins.
+        </p>
+        </div>
+      <hr>
+      <div>
+        <p> Below are the links to all of my blogs!</p>
+        <ul class="blog-list" id="go-to-blog">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="blog/html-css.html">Sprint 2 Tech - HTML-CSS Blog</a></li>
+          <!--<li href="#"></li>
+          <li href="#"></li>    commenting this out for later use -->
+        </ul>
+
+      </div>
+
+    </main>
+
+  </body>
+
+  <footer>
+    <p>Blog created by Edan Mourie.</p>
+    <p>For Dev Academy, 2022.</p>
+  </footer>
+
+</html>

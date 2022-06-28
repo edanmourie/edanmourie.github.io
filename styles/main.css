@@ -24,18 +24,11 @@ body, html { /* google said I had to put this in after adding <!DOCTYPE html>, b
   color: orange;
 }
 
-.sprint1-hero-text { /* Styling for the text in the main (index.html) hero text */
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: orange;
-}
-
 body { /* Styling for the text in the main (index.html) body */
   text-align: center;
   color: black;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .blog-list { /* aligns blog list text to the left so the bullet points look normal */
@@ -49,13 +42,37 @@ body { /* Styling for the text in the main (index.html) body */
   margin: auto;
 }
 
-
 footer { /* creating the footer */
   color: white;
   text-align:center;
   border-style: solid;
   margin-top: 20px;
   font-family: 'Lobster', cursive, sans-serif;
+}
+
+.sprint2tech-hero-text { /* Styling for the text in the main (index.html) hero text */
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: orange;
+}
+
+.margin-border-padding { /*Here we are calling the Class for that specific paragraph.*/
+  width: 33%;                 /*Setting the width of the whole box to 33% of the screen size.*/
+  background-color: aqua;   /*Background color of the box.*/
+  margin: auto;               /*Setting ALL margins to be automatic - this centers the box in the page.*/
+  margin-top: 50px;           /*Setting TOP margin to be 50px - this gives a gap above the box on the page.*/
+  margin-bottom: 50px;        /*Setting BOTTOM margin to be 50px - this gives a gap below the box on the page.*/
+  border-style: dashed;       /*What the border looks like, it could be dotted, solid color, etc.*/
+  border-color: coral;      /*Border color.*/
+  border-width: 10px;         /*Thickness of the border.*/
+  padding: 30px;              /*Gap between the text and the edge of the box.*/
+}
+
+.no-margin-border-padding {
+  background-color: aqua;
 }
 
 /* @media - changing footer color depending on minimum/maximum screen size */
