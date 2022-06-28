@@ -34,12 +34,19 @@ p {
   margin-right: 10px;
 }
 
+.lots-of-text {
+  width: auto;
+  margin-left: 25%;
+  margin-right:25%;
+  text-align: left;
+}
+
 .blog-list { /* aligns blog list text to the left so the bullet points look normal */
   text-align: left;
 }
 
 .blog-list { /* Creating a border around the blog list, also position w/ margin: auto; */
-  width: 200px;
+  width: 33%;
   border-style:solid;
   border-color: grey;
   margin: auto;
@@ -51,15 +58,6 @@ footer { /* creating the footer */
   border-style: solid;
   margin-top: 20px;
   font-family: 'Lobster', cursive, sans-serif;
-}
-
-.sprint2tech-hero-text { /* Styling for the text in the main (index.html) hero text */
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: orange;
 }
 
 .margin-border-padding { /*Here we are calling the Class for that specific paragraph.*/
