@@ -76,6 +76,7 @@ footer { /* creating the footer */
 
 .no-margin-border-padding {
   background-color: aqua;
+  margin: 0;
 }
 
 /* @media - changing footer color depending on minimum/maximum screen size */
