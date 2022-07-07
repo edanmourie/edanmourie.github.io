@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../styles/main.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oxygen:wght@300&display=swap" rel="stylesheet">
+        <title>Sprint 3 Tech - JavaScript Fundamentals</title>
+    </head>
+    <body>
+      <main>
+        <div class=hero-image>
+          <div class="main-hero-text">
+            <h1>Edan Mourie</h1>
+            <h2>Sprint 3 Tech - JavaScript Fundamentals</h2>
+            <button><a href="#go-to-blog">Go to blogs</a></button>
+          </div>
+        </div>
+        <div>
+          <h3>Kia ora and welcome to my <span style=color:orange;><i>Sprint 3 Tech Blog!</i></span></h3>     
+          <div class="lots-of-text">
+            <p>
+              <b>An analogy to describe JavaScript and its relationship to HTML and CSS:</b><br>
+              As discussed in previous blogs, HTML is the structure of a website and CSS is the styling. JavaScript is the doing. <br><br>              
+              For a real-life example of these three concepts, we will look at a McDonalds building. <br><br>
+              	
+              If using purely HTML, the McDonalds building would be in black and white, have only walls, and the text would all be the same basic font. You could have images of windows, doors, and the logo sign, but they would not be spaced where you want them. <br><br>
+              
+              Now adding CSS, the McDonalds building has windows, doors, and the logo sign in the correct spots – but they still don’t work. The roof and walls have colour, and text can be styled. <br><br>
+              
+              JavaScript does the work. The logo sign now lights up at night, music is playing, the doors and windows can open when someone pulls on them. If you wanted the roof to be painted a different colour, you could do that with JavaScript too. People move in and out of the building, doing stuff you do at a McDonalds.              
+            </p>
+            <p>
+              <b>Explaining control flow and loops.</b><br>
+              --- Control flow is the way the computer reads and executes the code, it does so from top-to-bottom in the code.
+            </p>
+            <p>I can make this <span class="controlFlow1">WORD</span> blue using the code below:</p>
+            <p class="controlFlowImg"><img src="../images/control-flow-example1.png"></p>
+            <p>
+              If I have the same code as above, but also change the colour of this <span class="controlFlow2">WORD</span> again later in the code, it will instead be red, as seen in th code below.
+            </p>
+            <p class="controlFlowImg"><img src="../images/control-flow-example2.png"></p>
+            <p>An example of this happening in real life is instructions for tying shoes. You are following the instructions and they say to “tie your laces in a bow”, so you do that, but the next instruction is “actually, tie a double-knot instead”, so you undo the bow and tie a double knot.</p>
+            <p>--- Loops do exactly what they say, they loop the code. You can set how many times the code loops with the condition (the part in the brackets). Every time the code loops it does the execution {the part in the curly brackets}. </p>
+            <p>A common loop you may do in real life is counting to 10. In real life it doesn't seem like a loop but I'll show you (in the code below) what I'm talking about.</p>
+            <p id="loopCounter"></p>
+            <div><button class="cssLoopButton" id="loopButton">Click this button.</button></div>
+            <p><img src ="../images/loops-example1.png"></p>
+            <p>To break it down, the loop starts at whatever number you decide in the first section of the condition - I've put (let i = 1;), so the loop starts at 1.</p> 
+            <p>The second part of the condition says how many times to loop - I've said (i <= 10;), which means it will loop as long as the number is less than or equal to 10. </p>
+            <p>The third part of the condition says how many to add to the loop - I've put (i++) which means it will add 1 every time it loops (meaning the first section invisibly becomes i = 2).</p>
+            <p>So, we start counting to 10 at 1, since our goal is to stop counting at 10, and we are still below 10, we will keep counting, and we will keep counting one higher each time. So next is two, we are still below 10, so we count again. 3. 4. 5. 6. 7. 8. 9. Finally, 10 (i = 10), we go to count more but we can't go past 10 because it is the maximum we can go (i <= 10 -- i has to be equal to or less than 10), therefore the loop stops before we count up again. </p>
+            <p>I would like to note that what I have done for this example is hard-code a stop point by saying (i <=10). Generally you want to avoid hard-coding loops because if I were to want a different maximum number, I would have to change what the maximum value of [i] can be every single time.</p>
+            <p><b>What is the Document Object Model (DOM) and how do you interact with it?</b>
+            - Put simply, the DOM is a family tree of objects. The original parent object is the <span style="color:red"><i>window</i></span> which is the browser you are using. The second object (child of window), which is one you actually interact with, is the <span style="color:orange"><i>document (HTML file)</i></span>. From the document comes its children, tags such as <span style="color:#BFBB32"><i>head</i></span> and <span style="color:#BFBB32"><i>body</i></span>. A child of a head tag might be <span style="color:green"><i>links </i></span> and a <span style="color:green"><i>title </i></span>, but the child of the body tag will be <span style="color:blue;"><i>div, p, h</i></span> tags.</p>
+            <p>The tree goes on and on...</p>
+            <p>Going back to the DOM. Document = our HTML file, Object = every object in the file including the file itself, Model - the tree/way you access each object The DOM allows you to access each individual object and change it separately from another object.</p>
+            <p><b>arrays and objeects, then functions </b></p>
+          </div>
+        </div>
+        <div>
+          <p> Below are the links to all of my blogs!</p>
+          <ul class="blog-list" id="go-to-blog">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="html-css.html">Sprint 2 Tech - HTML-CSS</a></li>
+            <li><a href="identity-values.html">Sprint 2 Core - Identity Values</a></li>
+            <li><a href="learning-plan.html">Sprint 2 Core - Learning Plan</a></li>
+            <li><a href="emotional-intelligence.html">Sprint 3 Core - Emotional Intelligence</a></li>
+            <li><a href="js-fundamentals.html">Sprint 3 Tech - JavaScript Fundamentals</a></li>
+        </div>
+      </main>
+      <script src="../script.js"></script>
+    </body>
+
+    <footer>
+      <p>Blog created by Edan Mourie.</p>
+      <p>For Dev Academy, 2022.</p>
+    </footer>
+
+</html>
