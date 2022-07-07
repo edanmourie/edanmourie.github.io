@@ -35,20 +35,20 @@
             </p>
             <p>
               <b>Explaining control flow and loops.</b><br>
-              --- Control flow is the way the computer reads and executes the code, it does so from top-to-bottom in the code.
+              <u>Control flow</u> is the way the computer reads and executes the code, it does so from top-to-bottom in the code.
             </p>
             <p>I can make this <span class="controlFlow1">WORD</span> blue using the code below:</p>
-            <p class="controlFlowImg"><img src="../images/control-flow-example1.png"></p>
+            <p class="exampleImg"><img src="../images/control-flow-example1.png"></p>
             <p>
               If I have the same code as above, but also change the colour of this <span class="controlFlow2">WORD</span> again later in the code, it will instead be red, as seen in th code below.
             </p>
-            <p class="controlFlowImg"><img src="../images/control-flow-example2.png"></p>
+            <p class="exampleImg"><img src="../images/control-flow-example2.png"></p>
             <p>An example of this happening in real life is instructions for tying shoes. You are following the instructions and they say to “tie your laces in a bow”, so you do that, but the next instruction is “actually, tie a double-knot instead”, so you undo the bow and tie a double knot.</p>
-            <p>--- Loops do exactly what they say, they loop the code. You can set how many times the code loops with the condition (the part in the brackets). Every time the code loops it does the execution {the part in the curly brackets}. </p>
+            <p><u>Loops</u> do exactly what they say, they loop the code. You can set how many times the code loops with the condition (the part in the brackets). Every time the code loops it does the execution {the part in the curly brackets}. </p>
             <p>A common loop you may do in real life is counting to 10. In real life it doesn't seem like a loop but I'll show you (in the code below) what I'm talking about.</p>
             <p id="loopCounter"></p>
-            <div><button class="cssLoopButton" id="loopButton">Click this button.</button></div>
-            <p><img src ="../images/loops-example1.png"></p>
+            <div><button class="cssButton" id="loopButton">Click this button.</button></div>
+            <p class="exampleImg"><img src ="../images/loops-example1.png"></p>
             <p>To break it down, the loop starts at whatever number you decide in the first section of the condition - I've put (let i = 1;), so the loop starts at 1.</p> 
             <p>The second part of the condition says how many times to loop - I've said (i <= 10;), which means it will loop as long as the number is less than or equal to 10. </p>
             <p>The third part of the condition says how many to add to the loop - I've put (i++) which means it will add 1 every time it loops (meaning the first section invisibly becomes i = 2).</p>
@@ -58,7 +58,32 @@
             - Put simply, the DOM is a family tree of objects. The original parent object is the <span style="color:red"><i>window</i></span> which is the browser you are using. The second object (child of window), which is one you actually interact with, is the <span style="color:orange"><i>document (HTML file)</i></span>. From the document comes its children, tags such as <span style="color:#BFBB32"><i>head</i></span> and <span style="color:#BFBB32"><i>body</i></span>. A child of a head tag might be <span style="color:green"><i>links </i></span> and a <span style="color:green"><i>title </i></span>, but the child of the body tag will be <span style="color:blue;"><i>div, p, h</i></span> tags.</p>
             <p>The tree goes on and on...</p>
             <p>Going back to the DOM. Document = our HTML file, Object = every object in the file including the file itself, Model - the tree/way you access each object The DOM allows you to access each individual object and change it separately from another object.</p>
-            <p><b>arrays and objeects, then functions </b></p>
+            <p><b>Difference between accessing data from arrays and objects: </b><br>
+            <u>Arrays</u> are values that are stored as a numerical number even if the thing you are storing is not a number. For example...</p>
+            <p>let names = ["John", "Sally", "Bob"]</p>
+            <p>The name "John" has the array value of 0, "Sally" is 1, and "Bob" is 2. To access a specific name you have to call for the array number.
+            </p>
+            <div><button class="cssButton" id="arrayButton">Click this button</button></div>
+            <p>Bob appears because I called for the name in position 2, which is Bob. See code below.</p>
+            <p class="exampleImg"><img src="../images/array-example.png"></p>
+            <p><u>Objects</u> have values that are stored within 'keys'. For example...</p>
+            <p>let nameObject = { <br>
+              firstNames: ["John", "Sally", "Bob"]<br>
+            }
+            </p>
+            <p><b>nameObject</b> is the object, however <b>names:</b> is the key.</p>
+            <div><button class="cssButton" id="objectButton">Click this button</button></div>
+            <p>All of the names appear as I have called for the values of the <b>nameObject</b> object AND the <b>firstNames</b> key at the same time, as seen in the code below.</p>
+            <p class="exampleImg"><img src="../images/object-example.png"></p>
+            <p>Note that it did not show the lastNames as they were not called.</p>
+            <p><b>What are functions and how are they helpful?</b><br>
+            As you have seen in my previous examples I have used a syntax called <span style="color:blue;">function</span>. Functions are an independent set of instructions that will be executed as a block.
+            </p>
+            <p>In the most recent example above, I named the function "callObject". I then created an object called "nameObject", and gave it keys called "firstNames" and "lastNames". Then I created an alert that made the first names pop up on the browser.</p>
+            <p>All of the code in a function will run when it is called. I called the function by the click of a button, as seen in the code below.</p>
+            <p class="exampleImg"><img src="../images/function-example.png"></p>
+            <p>Functions are very helpful because they run these blocks of code when you need them to, as set by predetermined calls such as a <button id="funnyFunctionButton">button click.</button></p>
+
           </div>
         </div>
         <div>

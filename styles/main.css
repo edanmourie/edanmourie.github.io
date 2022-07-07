@@ -86,11 +86,11 @@ footer { /* creating the footer */
   color: red;
 }
 
-.controlFlowImg {
+.exampleImg {
   text-align: center;
 }
 
-.cssLoopButton {
+.cssButton {
   margin: 0;
   position: relative;
   top: 50%;
@@ -102,6 +102,7 @@ footer { /* creating the footer */
 #loopCounter {
   text-align: center;
 }
+
 
 /* @media - changing footer color depending on minimum/maximum screen size */
 @media (min-width:320px), (max-width:767px) {
