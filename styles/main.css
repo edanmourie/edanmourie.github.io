@@ -106,13 +106,13 @@ footer { /* creating the footer */
 
 /* @media - changing footer color depending on minimum/maximum screen size */
 @media (min-width:320px), (max-width:767px) {
-  footer {background: orange; border-color: navy;}
+  footer {background: orange; border-color: navy; font-size: 10px;}
 }
 
 @media (min-width:768px), (max-width:1199px) { 
-  footer {background: purple; border-color: black;} 
+  footer {background: purple; border-color: black; font-size: 12px} 
 }
 
 @media (min-width:1200px) {
-  footer {background: navy; border-color: orange;}
+  footer {background: navy; border-color: orange; font-size: 14px}
 }
